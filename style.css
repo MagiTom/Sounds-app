@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+
+
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+header p {
+    font-size: 25px;
+}
+
+header {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.pads p {
+    padding: 10px;
+    color: white;
+}
+
+.pads {
+    background: lightblue;
+    width: 100%;
+    display: flex;
+}
+
+.pads>div {
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+
+.pad1 {
+    background: #707072;
+}
+
+.pad2 {
+    background: #6860d3;
+}
+
+.pad3 {
+    background: #9660d3;
+}
+
+.pad4 {
+    background: #609bd3;
+}
+
+.pad5 {
+    background: #d360b0;
+}
+
+.pad6 {
+    background: #c23447;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+
+    50% {
+        bottom: 40%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+
+}
+
+@keyframes jump2 {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+
+    10% {
+        bottom: 40%;
+        left: 50%;
+    }
+
+    20% {
+        bottom: 40%;
+        left: 50%;
+    }
+
+    50% {
+        bottom: 40%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+
+}
+
+.visual>div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+.bat {
+    background-image: url('nietoperz.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
